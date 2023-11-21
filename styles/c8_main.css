@@ -42,14 +42,17 @@ header img {
 }
 /* the styles for the navigation menu */
 #nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
 #nav_menu ul li {
-	float: left;
-    width: 20%;
+	/* float: left; */
+    flex-basis: 20%;
 }
 #nav_menu ul li a {
     display: block;
@@ -71,6 +74,7 @@ header img {
 }
 #nav_menu ul ul li {
 	float: none;
+	width: 20%;
 }
 #nav_menu ul li:hover > ul {
 	display: block;
